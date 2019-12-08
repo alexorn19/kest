@@ -1,0 +1,64 @@
+FQDN Complete
+alex213@server1:~$ hostname -f
+server1.aoh.local
+------------------------------------
+DHCP Server upgrade complete
+alex213@server1:~$ sudo apt-get upgrade isc-dhcp-server
+-------------------------------------------------------------
+DNS installment
+sudo apt-get install bind9
+sudo apt-get install dnsutils
+alex213@server1:~$ sudo vi /etc/bind/named.conf.options
+alex213@server1:~$ sudo systemctl restart bind9
+---------------------------------------------------------------
+alex213@server1:~/accounts/IT$ sudo useradd AleRag
+alex213@server1:~/accounts/IT$ sudo useradd AndHau
+
+alex213@server1:~/accounts/Management$ sudo useradd GudSte
+alex213@server1:~/accounts/Management$ sudo useradd HalJon
+alex213@server1:~/accounts/Management$ sudo useradd HarHja
+
+alex213@server1:~/accounts/Accounting$ sudo useradd HraAra
+alex213@server1:~/accounts/Accounting$ sudo useradd IngGud
+
+alex213@server1:~/accounts/Manufacturing$ sudo useradd IsaLei
+alex213@server1:~/accounts/Manufacturing$ sudo useradd JohKri
+alex213@server1:~/accounts/Manufacturing$ sudo useradd JohHaf
+alex213@server1:~/accounts/Manufacturing$ sudo useradd KriSva
+alex213@server1:~/accounts/Manufacturing$ sudo useradd LarGun
+alex213@server1:~/accounts/Manufacturing$ sudo useradd LinMag
+alex213@server1:~/accounts/Manufacturing$ sudo useradd RudBjo
+alex213@server1:~/accounts/Manufacturing$ sudo useradd SigSte
+alex213@server1:~/accounts/Manufacturing$ sudo useradd SigJen
+------------------------------------------------------------------
+sudo apt-get install -y samba-common python-glade2 system-config-samba
+------------------------------------------------------------------------
+alex213@server1:~$ sudo apt install apache2
+alex213@server1:~$ sudo chown -R $alex213 /var/www/AOH.local/html ?
+--------------------------------------------------------------------
+alex213@server1:~$ sudo apt install php php-gettext libapache2-mod-php
+alex213@server1:~$ sudo apt install mysql-server
+
+alex213@server1:~$ sudo apt install mysql-server
+mysql> USE mysql;
+mysql> UPDATE user SET plugin='mysql_native_password' WHERE User='root';
+mysql> FLUSH PRIVILEGES;
+mysql> exit;
+sudo service mysql restart
+alex213@server1:~$ sudo apt install phpmyadmin
+alex213@server1:~$ sudo service apache2 restart
+------------------------------------------------------------------------
+alex213@server1:~$ sudo apt install postfix
+------------------------------------------------------------------------
+alex213@server1:~$ sudo apt-get install pure-ftpd pureadmin
+alex213@server1:~$ sudo apt install quota
+alex213@server1:~$ sudo quotaon -v /
+-----------------------------------------------------------------------
+sudo systemctl stop apparmor.service
+sudo apt-get
+
+
+
+
+ ?
+
